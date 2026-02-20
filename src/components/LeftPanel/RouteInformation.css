@@ -1,0 +1,124 @@
+
+.route-card {
+    margin-top: 10px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    max-width: 400px;
+    border: 1px solid #eeeeee;
+    font-family: sans-serif;
+}
+
+/* Header */
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.red-bar {
+    height: 24px;
+    width: 4px;
+    background-color: #ff0000;
+    border-radius: 2px;
+    margin-right: 12px;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+/* --- TIMELINE UI --- */
+.timeline-container {
+    position: relative;
+    padding-left: 24px; 
+}
+
+.timeline-line {
+    position: absolute;
+    left: 3px; 
+    top: 6px;
+    bottom: 0;
+    width: 3px;
+    background-color: #d1d5db; 
+}
+
+.timeline-section {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.timeline-section:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -24px; 
+    top: 2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #f3f4f6;
+    border: 2px solid #9ca3af;
+    z-index: 2; 
+}
+
+.section-title {
+    margin: 0 0 16px 0;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #374151;
+    letter-spacing: 0.5px;
+}
+
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px; 
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.full-width {
+    grid-column: span 2; 
+}
+
+.half-width {
+    grid-column: span 1; 
+}
+
+.input-group label {
+    font-size: 0.8rem;
+    color: #888888;
+    margin-bottom: 6px;
+}
+
+.input-field {
+    background-color: #f9fafb;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 0.9rem;
+    color: #111827;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-field::placeholder {
+    color: #9ca3af;
+    opacity: 0.7;
+}
+
+.input-field:focus {
+    background-color: #f3f4f6; 
+}

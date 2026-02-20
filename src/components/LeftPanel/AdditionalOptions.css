@@ -1,0 +1,152 @@
+/* Base Card Styling (Matches your previous components) */
+.options-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    max-width: 400px;
+    border: 1px solid #eeeeee;
+    font-family: sans-serif;
+}
+
+/* Header */
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.red-bar {
+    height: 24px;
+    width: 4px;
+    background-color: #ff0000;
+    border-radius: 2px;
+    margin-right: 12px;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+/* Options Grid */
+.options-grid {
+    display: flex;
+    gap: 16px;
+}
+
+/* Individual Option Box */
+.option-box {
+    flex: 1; /* Makes both boxes take up equal width */
+    display: flex;
+    align-items: center;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    user-select: none; /* Prevents text selection when clicking rapidly */
+}
+
+/* Active State for the Box (Optional: adds a slight blue border when turned on) */
+.option-box.active {
+    border-color: #3b82f6;
+    background-color: #eff6ff;
+}
+
+/* Colored Icon Circles */
+.icon-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.fragile-icon {
+    background-color: #fed7aa; /* Light Orange/Peach */
+    color: #9a3412; /* Dark Orange */
+}
+
+.insurance-icon {
+    background-color: #bbf7d0; /* Light Green */
+    color: #166534; /* Dark Green */
+}
+
+/* Text Container */
+.option-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto; /* Pushes the toggle switch to the far right */
+}
+
+.option-text h4 {
+    margin: 0 0 2px 0;
+    font-size: 0.95rem;
+    color: #111827;
+    font-weight: 600;
+}
+
+.option-text p {
+    margin: 0;
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+/* --- Custom Toggle Switch --- */
+.toggle-switch {
+    position: relative;
+    width: 36px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+/* Hide default HTML checkbox */
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider track */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #d1d5db;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+/* The slider knob */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .3s;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+/* When checked, change background color */
+.option-box.active .slider {
+    background-color: #3b82f6; /* Blue toggle when active */
+}
+
+/* When checked, move the knob */
+.option-box.active .slider:before {
+    transform: translateX(16px);
+}

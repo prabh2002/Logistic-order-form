@@ -1,0 +1,126 @@
+
+:root {
+    --card-bg: #ffffff;
+    --gray-bg-input: #f3f4f6; /* Light gray for inputs */
+    --text-label: #888888;    /* Gray for labels */
+    --text-dark: #111827;     /* Dark text for values and title */
+    --red-accent: #ff0000;
+    --shadow-subtle: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.shipment-card {
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: var(--shadow-subtle);
+    max-width: 400px; /* Ensures it doesn't get too wide on large screens */
+    /* Temporary border to make it pop against a white background if needed */
+    border: 1px solid #eeeeee; 
+}
+
+/* Header Section */
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.red-bar {
+    height: 24px;
+    width: 4px;
+    background-color: var(--red-accent);
+    border-radius: 2px;
+    margin-right: 12px;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+/* Form Groups */
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 0.9rem;
+    color: var(--text-label);
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+/* Standard Input Styles */
+.input-field {
+    background-color: var(--gray-bg-input);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    outline: none;
+    width: 100%;
+    /* Important: ensure padding doesn't affect width */
+    box-sizing: border-box; 
+}
+
+/* Read only styling for Order ID */
+.input-field.read-only {
+    color: #9ca3af; /* Slightly lighter text for disabled look */
+    cursor: default;
+}
+
+/* Date Input specific styles */
+.date-input-wrapper {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+}
+
+.date-field {
+    /* padding-right: 40px; Make room for the icon */
+    font-family: inherit; 
+    cursor: pointer;
+}
+
+.calendar-icon {
+    position: absolute;
+    right: 16px;
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    pointer-events: none; /* Lets clicks pass through to the input if needed */
+}
+
+
+/* Delivery Type Toggle Switch */
+.toggle-container {
+    background-color: var(--gray-bg-input);
+    border-radius: 8px;
+    padding: 4px;
+    display: flex;
+    position: relative;
+}
+
+.toggle-btn {
+    flex: 1; /* Both buttons take up equal space */
+    border: none;
+    background: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* The active state that mimics the white sliding box */
+.toggle-btn.active {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}

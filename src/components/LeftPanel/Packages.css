@@ -1,0 +1,180 @@
+.packages-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Card Styling with the Blue Border from the image */
+.package-card {
+    margin-top: 10px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    max-width: 400px;
+    /* border: 2px solid #3b82f6;  */
+    font-family: sans-serif;
+}
+
+.card-header.space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.red-bar {
+    height: 24px;
+    width: 4px;
+    background-color: #ff0000;
+    border-radius: 2px;
+    margin-right: 12px;
+}
+
+.header-left h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: #111827;
+    cursor: pointer;
+    padding: 4px;
+    transition: color 0.2s;
+}
+
+.delete-btn:hover {
+    color: #ff0000;
+}
+
+/* Form Elements */
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 0.8rem;
+    color: #888888;
+    margin-bottom: 8px;
+}
+
+.input-field {
+    background-color: #f9fafb;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 0.9rem;
+    color: #111827;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Input with Icon Left */
+.input-with-icon {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #111827;
+    display: flex;
+}
+
+.has-icon {
+    padding-left: 44px; /* Make room for the cube icon */
+}
+
+/* Split Input for Weight + Unit */
+.split-input {
+    display: flex;
+    gap: 8px;
+}
+
+.unit-select {
+    background-color: #f9fafb;
+    border: none;
+    border-radius: 8px;
+    padding: 0 12px;
+    color: #6b7280;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Dimensions */
+.dimensions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.dimensions-header label {
+    margin-bottom: 0;
+}
+
+.small-select {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+}
+
+.dimensions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+/* Currency Input */
+.currency-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.currency-symbol {
+    position: absolute;
+    left: 14px;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.has-currency {
+    padding-left: 32px;
+}
+
+/* Add Package Button */
+.add-package-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    border: 1px dashed #ef4444; /* Red dashed border */
+    color: #ef4444;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.add-package-btn:hover {
+    background-color: #fef2f2; /* Very light red background on hover */
+}

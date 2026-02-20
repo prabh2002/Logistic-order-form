@@ -1,0 +1,26 @@
+/* Container holding both sections */
+.home-container {
+  display: flex;
+  
+  height: full; /* Makes the container take up the full height of the screen */
+  width: 100%;
+  background-color: #DDDDD6;
+  padding-left: 60px;
+}
+
+/* 40% Left Side */
+.left-section {
+  width: 40%;
+  /* background-color: #f4f4f4;  */
+  padding-left: 4vw;
+  padding-top: 4vh;
+  padding-bottom: 20px;
+}
+
+/* 60% Right Side */
+.right-section {
+  width: 60%;
+  /* background-color: #ffffff; */
+  
+  padding-top: 4vh; 
+}
